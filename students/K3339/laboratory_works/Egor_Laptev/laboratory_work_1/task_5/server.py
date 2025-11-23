@@ -15,7 +15,7 @@ class MyHTTPServer:
         self.port = port
         self.name = name
 
-    # Запуск сервера на сокете, обработка входящих соединений
+    # Запуск сервера на сокете
     def serve_forever(self):
         serv_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         serv_sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
