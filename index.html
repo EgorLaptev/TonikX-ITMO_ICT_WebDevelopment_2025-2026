@@ -6,15 +6,15 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Система управления автогонками - Racing Portal">
+        <meta name="description" content="Документация API для системы управления отелем">
       
       
-        <meta name="author" content="Егор Лаптев">
+        <meta name="author" content="Egor Laptev">
       
       
       
       
-        <link rel="next" href="task/">
+        <link rel="next" href="api/overview/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Отчет по лабораторной работе №2</title>
+        <title>Hotel Management API Documentation</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#-racing-portal" class="md-skip">
+        <a href="#api" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -90,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
-    <a href="." title="Отчет по лабораторной работе №2" class="md-header__button md-logo" aria-label="Отчет по лабораторной работе №2" data-md-component="logo">
+    <a href="." title="Hotel Management API Documentation" class="md-header__button md-logo" aria-label="Hotel Management API Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -104,7 +104,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Отчет по лабораторной работе №2
+            Hotel Management API Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -167,16 +167,13 @@
       </label>
       <nav class="md-search__options" aria-label="Поиск">
         
-          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Поделиться" aria-label="Поделиться" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
-            
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
-          </a>
-        
         <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -234,17 +231,18 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="task/" class="md-tabs__link">
-        
-  
-  
     
+    
+      <li class="md-tabs__item">
+        <a href="api/overview/" class="md-tabs__link">
+          
   
-  Описание задания
+  
+  API Endpoints
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -254,51 +252,13 @@
   
   
     <li class="md-tabs__item">
-      <a href="architecture/" class="md-tabs__link">
+      <a href="authentication/" class="md-tabs__link">
         
   
   
     
   
-  Архитектура системы
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="interfaces/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Интерфейсы
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="installation/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Установка и запуск
+  Аутентификация
 
       </a>
     </li>
@@ -318,44 +278,6 @@
     
   
   Модели данных
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="functionality/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Функциональность
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="conclusion/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Заключение
 
       </a>
     </li>
@@ -384,13 +306,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Навигация" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Отчет по лабораторной работе №2" class="md-nav__button md-logo" aria-label="Отчет по лабораторной работе №2" data-md-component="logo">
+    <a href="." title="Hotel Management API Documentation" class="md-nav__button md-logo" aria-label="Hotel Management API Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Отчет по лабораторной работе №2
+    Hotel Management API Documentation
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -465,7 +387,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Введение
+        Описание
       
     </span>
   </a>
@@ -484,10 +406,21 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Базовый URL
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Технологический стек
+        Аутентификация
       
     </span>
   </a>
@@ -499,6 +432,17 @@
     <span class="md-ellipsis">
       
         Структура документации
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Технологии
       
     </span>
   </a>
@@ -519,15 +463,69 @@
   
   
   
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Endpoints
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    API Endpoints
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="task/" class="md-nav__link">
+      <a href="api/overview/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Описание задания
+    Обзор
   
 
     
@@ -539,22 +537,23 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
   
   
     <li class="md-nav__item">
-      <a href="architecture/" class="md-nav__link">
+      <a href="api/room-types/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Архитектура системы
+    Room Types
   
 
     
@@ -566,22 +565,23 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
   
   
     <li class="md-nav__item">
-      <a href="interfaces/" class="md-nav__link">
+      <a href="api/floors/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Интерфейсы
+    Floors
   
 
     
@@ -593,6 +593,154 @@
     </li>
   
 
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="api/rooms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rooms
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="api/guests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="api/stays/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stays
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="api/employees/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Employees
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="api/cleaning-schedule/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cleaning Schedule
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
     
       
       
@@ -601,14 +749,14 @@
   
   
     <li class="md-nav__item">
-      <a href="installation/" class="md-nav__link">
+      <a href="authentication/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Установка и запуск
+    Аутентификация
   
 
     
@@ -636,60 +784,6 @@
     
   
     Модели данных
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="functionality/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Функциональность
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="conclusion/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Заключение
   
 
     
@@ -732,7 +826,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Введение
+        Описание
       
     </span>
   </a>
@@ -751,10 +845,21 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Базовый URL
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Технологический стек
+        Аутентификация
       
     </span>
   </a>
@@ -766,6 +871,17 @@
     <span class="md-ellipsis">
       
         Структура документации
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Технологии
       
     </span>
   </a>
@@ -789,43 +905,46 @@
 
 
 
-<h1 id="-racing-portal">Система управления автогонками - Racing Portal</h1>
-<h2 id="_1">Введение</h2>
-<p>Данный проект представляет собой веб-приложение для управления автогонками, разработанное на основе Django Framework. Система позволяет пользователям регистрироваться на гонки, просматривать результаты, оставлять комментарии и управлять своими профилями участников.</p>
+<h1 id="api">Документация API системы управления отелем</h1>
+<p>Добро пожаловать в документацию API для системы управления отелем, разработанной с использованием Django REST Framework.</p>
+<h2 id="_1">Описание</h2>
+<p>Данная система предоставляет RESTful API для управления отелем, включая работу с номерами, гостями, сотрудниками, бронированиями и расписанием уборки.</p>
 <h2 id="_2">Основные возможности</h2>
 <ul>
-<li><strong>Управление гонками</strong> - создание и просмотр информации о гонках</li>
-<li><strong>Профили участников</strong> - регистрация и управление профилями гонщиков</li>
-<li><strong>Управление автомобилями</strong> - добавление и редактирование информации об автомобилях</li>
-<li><strong>Табло победителей</strong> - отображение результатов гонок с полной информацией</li>
-<li><strong>Система комментариев</strong> - возможность оставлять отзывы и комментарии к гонкам</li>
-<li><strong>Аутентификация</strong> - регистрация, вход и выход из системы</li>
-<li><strong>Админ-панель</strong> - управление данными через Django Admin</li>
+<li>Управление типами номеров (Room Types)</li>
+<li>Управление этажами (Floors)</li>
+<li>Управление номерами (Rooms)</li>
+<li>Управление гостями (Guests)</li>
+<li>Управление проживаниями (Stays)</li>
+<li>Управление сотрудниками (Employees)</li>
+<li>Управление расписанием уборки (Cleaning Schedule)</li>
 </ul>
-<h2 id="_3">Технологический стек</h2>
-<ul>
-<li><strong>Backend:</strong> Django 5.2.8</li>
-<li><strong>Database:</strong> PostgreSQL 15</li>
-<li><strong>Frontend:</strong> HTML, CSS (Tailwind CSS), Bootstrap 5</li>
-<li><strong>Containerization:</strong> Docker, Docker Compose</li>
-<li><strong>Documentation:</strong> MkDocs Material</li>
-</ul>
+<h2 id="url">Базовый URL</h2>
+<p>Все API endpoints доступны по адресу:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>http://localhost:8000/api/
+</code></pre></div>
+<h2 id="_3">Аутентификация</h2>
+<p>API использует Token Authentication. Для получения токена необходимо пройти аутентификацию через endpoints Djoser.</p>
+<p>Подробнее об аутентификации см. раздел <a href="authentication/">Аутентификация</a>.</p>
 <h2 id="_4">Структура документации</h2>
-<p>Данная документация содержит:</p>
-<ol>
-<li><a href="task/">Описание задания</a> - индивидуальный вариант и требования</li>
-<li><a href="architecture/">Архитектура системы</a> - структура проекта и компоненты</li>
-<li><a href="interfaces/">Интерфейсы</a> - описание всех пользовательских интерфейсов</li>
-<li><a href="installation/">Установка и запуск</a> - инструкции по развертыванию</li>
-<li><a href="models/">Модели данных</a> - описание структуры базы данных</li>
-<li><a href="functionality/">Функциональность</a> - детальное описание возможностей системы</li>
-<li><a href="conclusion/">Заключение</a> - итоги работы</li>
-</ol>
-<hr />
-<p><strong>Автор:</strong> Егор Лаптев<br />
-<strong>Группа:</strong> K3339<br />
-<strong>Курс:</strong> 3-й курс<br />
-<strong>Дисциплина:</strong> Web Development</p>
+<ul>
+<li><a href="api/overview/">Обзор API</a> - общее описание всех endpoints</li>
+<li><a href="api/room-types/">Room Types</a> - работа с типами номеров</li>
+<li><a href="api/floors/">Floors</a> - работа с этажами</li>
+<li><a href="api/rooms/">Rooms</a> - работа с номерами</li>
+<li><a href="api/guests/">Guests</a> - работа с гостями</li>
+<li><a href="api/stays/">Stays</a> - работа с проживаниями</li>
+<li><a href="api/employees/">Employees</a> - работа с сотрудниками</li>
+<li><a href="api/cleaning-schedule/">Cleaning Schedule</a> - работа с расписанием уборки</li>
+<li><a href="models/">Модели данных</a> - описание структуры данных</li>
+</ul>
+<h2 id="_5">Технологии</h2>
+<ul>
+<li><strong>Django</strong> - веб-фреймворк</li>
+<li><strong>Django REST Framework</strong> - для создания REST API</li>
+<li><strong>Djoser</strong> - для аутентификации</li>
+<li><strong>SQLite</strong> - база данных</li>
+</ul>
 
 
 
@@ -881,7 +1000,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "search.share"], "search": "assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight"], "search": "assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
     
     
       <script src="assets/javascripts/bundle.e71a0d61.min.js"></script>
