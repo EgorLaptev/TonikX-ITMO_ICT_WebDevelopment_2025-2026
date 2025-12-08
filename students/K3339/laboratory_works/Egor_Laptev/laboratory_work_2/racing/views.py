@@ -25,7 +25,6 @@ class RaceListView(ListView):
         return queryset
 
 
-
 def race_list(request):
     races = Race.objects.order_by('-date')
     return render(request, 'racing/race_list.html', {'races': races})

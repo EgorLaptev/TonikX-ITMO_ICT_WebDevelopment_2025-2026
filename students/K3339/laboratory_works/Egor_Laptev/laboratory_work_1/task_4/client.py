@@ -29,7 +29,7 @@ def main():
 
     while True:
         message = input()
-        if message.lower() == 'exit':
+        if message.lower() == '!q':
             sock.close()
             break
         sock.send(f"{nickname}: {message}".encode())

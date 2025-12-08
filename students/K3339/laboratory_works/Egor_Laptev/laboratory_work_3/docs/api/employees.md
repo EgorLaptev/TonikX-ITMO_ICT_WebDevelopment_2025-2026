@@ -192,3 +192,5 @@ curl -X DELETE http://localhost:8000/api/employees/1/ \
 - Поле `employed` по умолчанию имеет значение `true`
 - Установка `employed` в `false` означает, что сотрудник больше не работает в отеле
 
+
+

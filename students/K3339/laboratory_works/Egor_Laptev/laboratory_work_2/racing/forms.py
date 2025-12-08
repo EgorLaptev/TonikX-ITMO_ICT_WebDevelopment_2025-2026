@@ -20,7 +20,6 @@ class RegistrationForm(forms.ModelForm):
         user = kwargs.pop('user', None)
         super().__init__(*args, **kwargs)
         if user and hasattr(user, 'profile'):
-            # Фильтруем автомобили только для текущего пользователя
             self.fields['car'].queryset = Car.objects.filter(owner=user.profile)
         else:
             self.fields['car'].queryset = Car.objects.none()
