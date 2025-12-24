@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Документация API для системы управления отелем">
+        <meta name="description" content="Документация интерфейсов Vue 3 для системы управления отелем">
       
       
         <meta name="author" content="Egor Laptev">
@@ -23,7 +23,7 @@
     
     
       
-        <title>Hotel Management API Documentation</title>
+        <title>Hotel Management Frontend Documentation</title>
       
     
     
@@ -83,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
-    <a href="/." title="Hotel Management API Documentation" class="md-header__button md-logo" aria-label="Hotel Management API Documentation" data-md-component="logo">
+    <a href="/." title="Hotel Management Frontend Documentation" class="md-header__button md-logo" aria-label="Hotel Management Frontend Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -97,7 +97,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Hotel Management API Documentation
+            Hotel Management Frontend Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -225,11 +225,11 @@
     
     
       <li class="md-tabs__item">
-        <a href="/api/overview/" class="md-tabs__link">
+        <a href="/interfaces/login/" class="md-tabs__link">
           
   
   
-  API Endpoints
+  Интерфейсы
 
         </a>
       </li>
@@ -243,13 +243,13 @@
   
   
     <li class="md-tabs__item">
-      <a href="/authentication/" class="md-tabs__link">
+      <a href="/api-integration/" class="md-tabs__link">
         
   
   
     
   
-  Аутентификация
+  API взаимодействие
 
       </a>
     </li>
@@ -262,13 +262,13 @@
   
   
     <li class="md-tabs__item">
-      <a href="/models/" class="md-tabs__link">
+      <a href="/architecture/" class="md-tabs__link">
         
   
   
     
   
-  Модели данных
+  Архитектура
 
       </a>
     </li>
@@ -297,13 +297,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Навигация" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Hotel Management API Documentation" class="md-nav__button md-logo" aria-label="Hotel Management API Documentation" data-md-component="logo">
+    <a href="/." title="Hotel Management Frontend Documentation" class="md-nav__button md-logo" aria-label="Hotel Management Frontend Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Hotel Management API Documentation
+    Hotel Management Frontend Documentation
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -367,7 +367,7 @@
   <span class="md-ellipsis">
     
   
-    API Endpoints
+    Интерфейсы
   
 
     
@@ -383,7 +383,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    API Endpoints
+    Интерфейсы
   
 
           </label>
@@ -396,14 +396,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/api/overview/" class="md-nav__link">
+      <a href="/interfaces/login/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Обзор
+    Авторизация
   
 
     
@@ -424,14 +424,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/api/room-types/" class="md-nav__link">
+      <a href="/interfaces/register/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Room Types
+    Регистрация
   
 
     
@@ -452,14 +452,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/api/floors/" class="md-nav__link">
+      <a href="/interfaces/profile/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Floors
+    Профиль пользователя
   
 
     
@@ -480,14 +480,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/api/rooms/" class="md-nav__link">
+      <a href="/interfaces/room-types/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Rooms
+    Типы номеров
   
 
     
@@ -508,14 +508,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/api/guests/" class="md-nav__link">
+      <a href="/interfaces/floors/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Guests
+    Этажи
   
 
     
@@ -536,14 +536,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/api/stays/" class="md-nav__link">
+      <a href="/interfaces/rooms/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Stays
+    Номера
   
 
     
@@ -564,14 +564,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/api/employees/" class="md-nav__link">
+      <a href="/interfaces/guests/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Employees
+    Гости
   
 
     
@@ -592,14 +592,70 @@
   
   
     <li class="md-nav__item">
-      <a href="/api/cleaning-schedule/" class="md-nav__link">
+      <a href="/interfaces/stays/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Cleaning Schedule
+    Проживания
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/interfaces/employees/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Сотрудники
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/interfaces/cleaning-schedule/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    График уборки
   
 
     
@@ -627,14 +683,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/authentication/" class="md-nav__link">
+      <a href="/api-integration/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Аутентификация
+    API взаимодействие
   
 
     
@@ -654,14 +710,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/models/" class="md-nav__link">
+      <a href="/architecture/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Модели данных
+    Архитектура
   
 
     

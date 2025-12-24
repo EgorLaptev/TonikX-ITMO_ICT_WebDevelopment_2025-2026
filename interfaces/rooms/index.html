@@ -6,17 +6,17 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Документация API для системы управления отелем">
+        <meta name="description" content="Документация интерфейсов Vue 3 для системы управления отелем">
       
       
         <meta name="author" content="Egor Laptev">
       
       
       
-        <link rel="prev" href="../room-types/">
+        <link rel="prev" href="../floors/">
       
       
-        <link rel="next" href="../rooms/">
+        <link rel="next" href="../guests/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Floors - Hotel Management API Documentation</title>
+        <title>Номера - Hotel Management Frontend Documentation</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#floors-api" class="md-skip">
+        <a href="#_1" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
-    <a href="../.." title="Hotel Management API Documentation" class="md-header__button md-logo" aria-label="Hotel Management API Documentation" data-md-component="logo">
+    <a href="../.." title="Hotel Management Frontend Documentation" class="md-header__button md-logo" aria-label="Hotel Management Frontend Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -106,13 +106,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Hotel Management API Documentation
+            Hotel Management Frontend Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Floors
+              Номера
             
           </span>
         </div>
@@ -236,11 +236,11 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../overview/" class="md-tabs__link">
+        <a href="../login/" class="md-tabs__link">
           
   
   
-  API Endpoints
+  Интерфейсы
 
         </a>
       </li>
@@ -254,13 +254,13 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../authentication/" class="md-tabs__link">
+      <a href="../../api-integration/" class="md-tabs__link">
         
   
   
     
   
-  Аутентификация
+  API взаимодействие
 
       </a>
     </li>
@@ -273,13 +273,13 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../models/" class="md-tabs__link">
+      <a href="../../architecture/" class="md-tabs__link">
         
   
   
     
   
-  Модели данных
+  Архитектура
 
       </a>
     </li>
@@ -308,13 +308,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Навигация" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Hotel Management API Documentation" class="md-nav__button md-logo" aria-label="Hotel Management API Documentation" data-md-component="logo">
+    <a href="../.." title="Hotel Management Frontend Documentation" class="md-nav__button md-logo" aria-label="Hotel Management Frontend Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Hotel Management API Documentation
+    Hotel Management Frontend Documentation
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -381,7 +381,7 @@
   <span class="md-ellipsis">
     
   
-    API Endpoints
+    Интерфейсы
   
 
     
@@ -397,7 +397,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    API Endpoints
+    Интерфейсы
   
 
           </label>
@@ -410,14 +410,70 @@
   
   
     <li class="md-nav__item">
-      <a href="../overview/" class="md-nav__link">
+      <a href="../login/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Обзор
+    Авторизация
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../register/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Регистрация
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../profile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Профиль пользователя
   
 
     
@@ -445,7 +501,35 @@
   <span class="md-ellipsis">
     
   
-    Room Types
+    Типы номеров
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../floors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этажи
   
 
     
@@ -482,7 +566,7 @@
   <span class="md-ellipsis">
     
   
-    Floors
+    Номера
   
 
     
@@ -500,7 +584,7 @@
   <span class="md-ellipsis">
     
   
-    Floors
+    Номера
   
 
     
@@ -526,127 +610,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#url" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Базовый URL
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Модель данных
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#endpoints" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Endpoints
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Endpoints">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#get-apifloors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        GET /api/floors/
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#get-apifloorsid" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        GET /api/floors/{id}/
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#post-apifloors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        POST /api/floors/
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#put-apifloorsid" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        PUT /api/floors/{id}/
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#patch-apifloorsid" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        PATCH /api/floors/{id}/
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#delete-apifloorsid" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        DELETE /api/floors/{id}/
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Ошибки
+        Описание
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Ошибки">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Расположение
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Маршрут
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Функциональность
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Функциональность">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#400-bad-request" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        400 Bad Request
+        Основные операции
       
     </span>
   </a>
@@ -654,10 +666,54 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#404-not-found" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
-        404 Not Found
+        Поля формы
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Валидация
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API Endpoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Пример запроса создания
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Пример ответа
       
     </span>
   </a>
@@ -666,6 +722,28 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UI Компоненты
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Обработка ошибок
+      
+    </span>
+  </a>
   
 </li>
       
@@ -685,34 +763,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../rooms/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Rooms
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../guests/" class="md-nav__link">
         
   
@@ -720,7 +770,7 @@
   <span class="md-ellipsis">
     
   
-    Guests
+    Гости
   
 
     
@@ -748,7 +798,7 @@
   <span class="md-ellipsis">
     
   
-    Stays
+    Проживания
   
 
     
@@ -776,7 +826,7 @@
   <span class="md-ellipsis">
     
   
-    Employees
+    Сотрудники
   
 
     
@@ -804,7 +854,7 @@
   <span class="md-ellipsis">
     
   
-    Cleaning Schedule
+    График уборки
   
 
     
@@ -832,14 +882,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../authentication/" class="md-nav__link">
+      <a href="../../api-integration/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Аутентификация
+    API взаимодействие
   
 
     
@@ -859,14 +909,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../models/" class="md-nav__link">
+      <a href="../../architecture/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Модели данных
+    Архитектура
   
 
     
@@ -906,127 +956,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#url" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Базовый URL
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Модель данных
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#endpoints" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Endpoints
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Endpoints">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#get-apifloors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        GET /api/floors/
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#get-apifloorsid" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        GET /api/floors/{id}/
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#post-apifloors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        POST /api/floors/
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#put-apifloorsid" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        PUT /api/floors/{id}/
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#patch-apifloorsid" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        PATCH /api/floors/{id}/
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#delete-apifloorsid" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        DELETE /api/floors/{id}/
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Ошибки
+        Описание
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Ошибки">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Расположение
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Маршрут
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Функциональность
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Функциональность">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#400-bad-request" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        400 Bad Request
+        Основные операции
       
     </span>
   </a>
@@ -1034,10 +1012,54 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#404-not-found" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
-        404 Not Found
+        Поля формы
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Валидация
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API Endpoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Пример запроса создания
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Пример ответа
       
     </span>
   </a>
@@ -1046,6 +1068,28 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UI Компоненты
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Обработка ошибок
+      
+    </span>
+  </a>
   
 </li>
       
@@ -1066,137 +1110,118 @@
 
 
 
-<h1 id="floors-api">Floors API</h1>
-<p>Endpoint для управления этажами отеля.</p>
-<h2 id="url">Базовый URL</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>/api/floors/
+<h1 id="_1">Интерфейс управления номерами</h1>
+<p>Интерфейс для управления номерами отеля.</p>
+<h2 id="_2">Описание</h2>
+<p>Компонент <code>Rooms.vue</code> предоставляет полный CRUD функционал для управления номерами отеля, включая создание, редактирование и удаление номеров.</p>
+<h2 id="_3">Расположение</h2>
+<p>Компонент находится в файле <code>src/views/Rooms.vue</code></p>
+<h2 id="_4">Маршрут</h2>
+<ul>
+<li><strong>URL:</strong> <code>/rooms</code></li>
+<li><strong>Маршрут:</strong> <code>Rooms</code></li>
+<li><strong>Мета:</strong> <code>requiresAuth: true</code> - доступен только авторизованным пользователям</li>
+</ul>
+<h2 id="_5">Функциональность</h2>
+<h3 id="_6">Основные операции</h3>
+<ol>
+<li><strong>Просмотр списка</strong> - отображение всех номеров в таблице</li>
+<li><strong>Создание</strong> - добавление нового номера</li>
+<li><strong>Редактирование</strong> - изменение существующего номера</li>
+<li><strong>Удаление</strong> - удаление номера с подтверждением</li>
+</ol>
+<h3 id="_7">Поля формы</h3>
+<ol>
+<li><strong>Номер комнаты (number)</strong></li>
+<li>Тип: текст</li>
+<li>Обязательное поле</li>
+<li>
+<p>Правила валидации: поле должно быть заполнено</p>
+</li>
+<li>
+<p><strong>Телефон (phone)</strong></p>
+</li>
+<li>Тип: текст</li>
+<li>
+<p>Необязательное поле</p>
+</li>
+<li>
+<p><strong>Тип номера (type_id)</strong></p>
+</li>
+<li>Тип: выбор из списка</li>
+<li>Обязательное поле</li>
+<li>
+<p>Правила валидации: должен быть выбран тип номера</p>
+</li>
+<li>
+<p><strong>Этаж (floor_id)</strong></p>
+</li>
+<li>Тип: выбор из списка</li>
+<li>Обязательное поле</li>
+<li>Правила валидации: должен быть выбран этаж</li>
+</ol>
+<h3 id="_8">Валидация</h3>
+<p>Форма использует встроенную валидацию Vuetify с правилами:</p>
+<ul>
+<li><code>number</code>: проверка наличия значения</li>
+<li><code>type_id</code>: проверка выбора типа номера</li>
+<li><code>floor_id</code>: проверка выбора этажа</li>
+</ul>
+<p>На сервере также выполняется проверка уникальности номера комнаты на этаже.</p>
+<h3 id="api-endpoints">API Endpoints</h3>
+<p><strong>GET</strong> <code>/api/rooms/</code> - Получение списка номеров</p>
+<p><strong>GET</strong> <code>/api/rooms/{id}/</code> - Получение конкретного номера</p>
+<p><strong>POST</strong> <code>/api/rooms/</code> - Создание нового номера</p>
+<p><strong>PUT</strong> <code>/api/rooms/{id}/</code> - Обновление номера</p>
+<p><strong>PATCH</strong> <code>/api/rooms/{id}/</code> - Частичное обновление номера</p>
+<p><strong>DELETE</strong> <code>/api/rooms/{id}/</code> - Удаление номера</p>
+<h3 id="_9">Пример запроса создания</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&quot;number&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;101&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">&quot;phone&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;+7-123-456-7890&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">&quot;type_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nt">&quot;floor_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">}</span>
 </code></pre></div>
-<h2 id="_1">Модель данных</h2>
-<table>
-<thead>
-<tr>
-<th>Поле</th>
-<th>Тип</th>
-<th>Описание</th>
-<th>Обязательное</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>id</code></td>
-<td>Integer</td>
-<td>Уникальный идентификатор</td>
-<td>Автоматически</td>
-</tr>
-<tr>
-<td><code>number</code></td>
-<td>PositiveInteger</td>
-<td>Номер этажа</td>
-<td>Да</td>
-</tr>
-</tbody>
-</table>
-<h2 id="endpoints">Endpoints</h2>
-<h3 id="get-apifloors">GET <code>/api/floors/</code></h3>
-<p>Получить список всех этажей.</p>
-<p><strong>Пример запроса:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>GET<span class="w"> </span>http://localhost:8000/api/floors/<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Token your_token_here&quot;</span>
-</code></pre></div></p>
-<p><strong>Пример ответа (200 OK):</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">[</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="p">{</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="nt">&quot;number&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="p">},</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="p">{</span>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="nt">&quot;number&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span><span class="p">}</span>
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="p">]</span>
-</code></pre></div></p>
-<h3 id="get-apifloorsid">GET <code>/api/floors/{id}/</code></h3>
-<p>Получить конкретный этаж по ID.</p>
-<p><strong>Пример запроса:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>GET<span class="w"> </span>http://localhost:8000/api/floors/1/<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Token your_token_here&quot;</span>
-</code></pre></div></p>
-<p><strong>Пример ответа (200 OK):</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">{</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="nt">&quot;number&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="p">}</span>
-</code></pre></div></p>
-<h3 id="post-apifloors">POST <code>/api/floors/</code></h3>
-<p>Создать новый этаж.</p>
-<p><strong>Пример запроса:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://localhost:8000/api/floors/<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Token your_token_here&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="s1">    &quot;number&quot;: 3</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="s1">  }&#39;</span>
-</code></pre></div></p>
-<p><strong>Пример ответа (201 Created):</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">{</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span><span class="nt">&quot;number&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="p">}</span>
-</code></pre></div></p>
-<h3 id="put-apifloorsid">PUT <code>/api/floors/{id}/</code></h3>
-<p>Полностью обновить этаж.</p>
-<p><strong>Пример запроса:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>PUT<span class="w"> </span>http://localhost:8000/api/floors/1/<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Token your_token_here&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{</span>
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="s1">    &quot;number&quot;: 5</span>
-<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="s1">  }&#39;</span>
-</code></pre></div></p>
-<p><strong>Пример ответа (200 OK):</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">{</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span><span class="nt">&quot;number&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span>
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="p">}</span>
-</code></pre></div></p>
-<h3 id="patch-apifloorsid">PATCH <code>/api/floors/{id}/</code></h3>
-<p>Частично обновить этаж.</p>
-<p><strong>Пример запроса:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>PATCH<span class="w"> </span>http://localhost:8000/api/floors/1/<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Token your_token_here&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{</span>
-<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="s1">    &quot;number&quot;: 10</span>
-<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="s1">  }&#39;</span>
-</code></pre></div></p>
-<p><strong>Пример ответа (200 OK):</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="p">{</span>
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">  </span><span class="nt">&quot;number&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span>
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="p">}</span>
-</code></pre></div></p>
-<h3 id="delete-apifloorsid">DELETE <code>/api/floors/{id}/</code></h3>
-<p>Удалить этаж.</p>
-<p><strong>Пример запроса:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>DELETE<span class="w"> </span>http://localhost:8000/api/floors/1/<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Token your_token_here&quot;</span>
-</code></pre></div></p>
-<p><strong>Ответ:</strong> 204 No Content</p>
-<h2 id="_2">Ошибки</h2>
-<h3 id="400-bad-request">400 Bad Request</h3>
-<p>Возникает при неверных данных в запросе.</p>
-<p><strong>Пример ответа:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="p">{</span>
-<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">  </span><span class="nt">&quot;number&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;This field is required.&quot;</span><span class="p">]</span>
-<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="p">}</span>
-</code></pre></div></p>
-<h3 id="404-not-found">404 Not Found</h3>
-<p>Этаж с указанным ID не найден.</p>
-<p><strong>Пример ответа:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="p">{</span>
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">  </span><span class="nt">&quot;detail&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Not found.&quot;</span>
-<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="p">}</span>
-</code></pre></div></p>
+<h3 id="_10">Пример ответа</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="nt">&quot;number&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;101&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="nt">&quot;phone&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;+7-123-456-7890&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Стандарт&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="nt">&quot;capacity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="nt">&quot;price_per_day&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2500.00&quot;</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">  </span><span class="nt">&quot;floor&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">    </span><span class="nt">&quot;number&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="p">}</span>
+</code></pre></div>
+<h2 id="ui">UI Компоненты</h2>
+<p>Интерфейс использует следующие компоненты Vuetify:</p>
+<ul>
+<li><code>v-container</code> - контейнер с адаптивной сеткой</li>
+<li><code>v-card</code> - карточка с данными</li>
+<li><code>v-data-table</code> - таблица для отображения данных</li>
+<li><code>v-dialog</code> - модальное окно для формы</li>
+<li><code>v-form</code> - форма с валидацией</li>
+<li><code>v-text-field</code> - текстовые поля ввода</li>
+<li><code>v-select</code> - выпадающие списки для выбора типа и этажа</li>
+<li><code>v-btn</code> - кнопки действий</li>
+<li><code>v-alert</code> - отображение ошибок</li>
+</ul>
+<h2 id="_11">Обработка ошибок</h2>
+<p>Компонент обрабатывает следующие типы ошибок:</p>
+<ul>
+<li><strong>400 Bad Request</strong>: Ошибки валидации данных (например, номер уже существует на этаже)</li>
+<li><strong>401 Unauthorized</strong>: Отсутствие авторизации</li>
+<li><strong>404 Not Found</strong>: Номер не найден</li>
+<li><strong>500 Internal Server Error</strong>: Ошибка сервера</li>
+</ul>
+<p>Все ошибки отображаются в виде алерта под формой.</p>
 
 
 

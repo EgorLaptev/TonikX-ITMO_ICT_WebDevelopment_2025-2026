@@ -6,17 +6,17 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Документация API для системы управления отелем">
+        <meta name="description" content="Документация интерфейсов Vue 3 для системы управления отелем">
       
       
         <meta name="author" content="Egor Laptev">
       
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../employees/">
       
       
-        <link rel="next" href="../room-types/">
+        <link rel="next" href="../../api-integration/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Обзор - Hotel Management API Documentation</title>
+        <title>График уборки - Hotel Management Frontend Documentation</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#api-endpoints" class="md-skip">
+        <a href="#_1" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
-    <a href="../.." title="Hotel Management API Documentation" class="md-header__button md-logo" aria-label="Hotel Management API Documentation" data-md-component="logo">
+    <a href="../.." title="Hotel Management Frontend Documentation" class="md-header__button md-logo" aria-label="Hotel Management Frontend Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -106,13 +106,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Hotel Management API Documentation
+            Hotel Management Frontend Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Обзор
+              График уборки
             
           </span>
         </div>
@@ -236,11 +236,11 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../login/" class="md-tabs__link">
           
   
   
-  API Endpoints
+  Интерфейсы
 
         </a>
       </li>
@@ -254,13 +254,13 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../authentication/" class="md-tabs__link">
+      <a href="../../api-integration/" class="md-tabs__link">
         
   
   
     
   
-  Аутентификация
+  API взаимодействие
 
       </a>
     </li>
@@ -273,13 +273,13 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../models/" class="md-tabs__link">
+      <a href="../../architecture/" class="md-tabs__link">
         
   
   
     
   
-  Модели данных
+  Архитектура
 
       </a>
     </li>
@@ -308,13 +308,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Навигация" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Hotel Management API Documentation" class="md-nav__button md-logo" aria-label="Hotel Management API Documentation" data-md-component="logo">
+    <a href="../.." title="Hotel Management Frontend Documentation" class="md-nav__button md-logo" aria-label="Hotel Management Frontend Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Hotel Management API Documentation
+    Hotel Management Frontend Documentation
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -381,7 +381,7 @@
   <span class="md-ellipsis">
     
   
-    API Endpoints
+    Интерфейсы
   
 
     
@@ -397,7 +397,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    API Endpoints
+    Интерфейсы
   
 
           </label>
@@ -407,44 +407,17 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Обзор
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../login/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Обзор
+    Авторизация
   
 
     
@@ -453,142 +426,62 @@
   
 
       </a>
-      
-        
+    </li>
+  
 
-<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+              
+            
+              
+                
   
   
   
+  
+    <li class="md-nav__item">
+      <a href="../register/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     
   
+    Регистрация
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Содержание
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#endpoints" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Список доступных endpoints
-      
-    </span>
-  </a>
+
+    
+  </span>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Стандартные операции
-      
-    </span>
-  </a>
   
-    <nav class="md-nav" aria-label="Стандартные операции">
-      <ul class="md-nav__list">
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../profile/" class="md-nav__link">
         
-          <li class="md-nav__item">
-  <a href="#get-apiresource" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        GET /api/{resource}/
-      
-    </span>
-  </a>
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#get-apiresourceid" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        GET /api/{resource}/{id}/
-      
-    </span>
-  </a>
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#post-apiresource" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        POST /api/{resource}/
-      
-    </span>
-  </a>
+  <span class="md-ellipsis">
+    
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#put-apiresourceid" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        PUT /api/{resource}/{id}/
-      
-    </span>
-  </a>
+    Профиль пользователя
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#patch-apiresourceid" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        PATCH /api/{resource}/{id}/
-      
-    </span>
-  </a>
+
+    
+  </span>
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#delete-apiresourceid" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        DELETE /api/{resource}/{id}/
-      
-    </span>
-  </a>
   
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Коды ответов
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Формат запросов и ответов
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
+
+      </a>
     </li>
   
 
@@ -608,7 +501,7 @@
   <span class="md-ellipsis">
     
   
-    Room Types
+    Типы номеров
   
 
     
@@ -636,7 +529,7 @@
   <span class="md-ellipsis">
     
   
-    Floors
+    Этажи
   
 
     
@@ -664,7 +557,7 @@
   <span class="md-ellipsis">
     
   
-    Rooms
+    Номера
   
 
     
@@ -692,7 +585,7 @@
   <span class="md-ellipsis">
     
   
-    Guests
+    Гости
   
 
     
@@ -720,7 +613,7 @@
   <span class="md-ellipsis">
     
   
-    Stays
+    Проживания
   
 
     
@@ -748,7 +641,7 @@
   <span class="md-ellipsis">
     
   
-    Employees
+    Сотрудники
   
 
     
@@ -766,17 +659,44 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../cleaning-schedule/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    График уборки
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    Cleaning Schedule
+    График уборки
   
 
     
@@ -785,6 +705,175 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Описание
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Расположение
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Маршрут
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Функциональность
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Функциональность">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Основные операции
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Поля формы
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Валидация
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API Endpoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Пример запроса создания
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Пример ответа
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UI Компоненты
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Особенности
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Обработка ошибок
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -804,14 +893,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../authentication/" class="md-nav__link">
+      <a href="../../api-integration/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Аутентификация
+    API взаимодействие
   
 
     
@@ -831,14 +920,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../models/" class="md-nav__link">
+      <a href="../../architecture/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Модели данных
+    Архитектура
   
 
     
@@ -878,10 +967,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#endpoints" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Список доступных endpoints
+        Описание
       
     </span>
   </a>
@@ -889,22 +978,44 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Стандартные операции
+        Расположение
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Стандартные операции">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Маршрут
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Функциональность
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Функциональность">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#get-apiresource" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        GET /api/{resource}/
+        Основные операции
       
     </span>
   </a>
@@ -912,10 +1023,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#get-apiresourceid" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
-        GET /api/{resource}/{id}/
+        Поля формы
       
     </span>
   </a>
@@ -923,10 +1034,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#post-apiresource" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       
-        POST /api/{resource}/
+        Валидация
       
     </span>
   </a>
@@ -934,10 +1045,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#put-apiresourceid" class="md-nav__link">
+  <a href="#api-endpoints" class="md-nav__link">
     <span class="md-ellipsis">
       
-        PUT /api/{resource}/{id}/
+        API Endpoints
       
     </span>
   </a>
@@ -945,10 +1056,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#patch-apiresourceid" class="md-nav__link">
+  <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       
-        PATCH /api/{resource}/{id}/
+        Пример запроса создания
       
     </span>
   </a>
@@ -956,10 +1067,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#delete-apiresourceid" class="md-nav__link">
+  <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
       
-        DELETE /api/{resource}/{id}/
+        Пример ответа
       
     </span>
   </a>
@@ -972,10 +1083,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#ui" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Коды ответов
+        UI Компоненты
       
     </span>
   </a>
@@ -983,10 +1094,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Формат запросов и ответов
+        Особенности
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Обработка ошибок
       
     </span>
   </a>
@@ -1010,154 +1132,119 @@
 
 
 
-<h1 id="api-endpoints">Обзор API Endpoints</h1>
-<p>Все endpoints используют стандартные HTTP методы для выполнения операций CRUD (Create, Read, Update, Delete).</p>
-<h2 id="endpoints">Список доступных endpoints</h2>
-<table>
-<thead>
-<tr>
-<th>Endpoint</th>
-<th>Описание</th>
-<th>Модель</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>/api/room-types/</code></td>
-<td>Управление типами номеров</td>
-<td>RoomType</td>
-</tr>
-<tr>
-<td><code>/api/floors/</code></td>
-<td>Управление этажами</td>
-<td>Floor</td>
-</tr>
-<tr>
-<td><code>/api/rooms/</code></td>
-<td>Управление номерами</td>
-<td>Room</td>
-</tr>
-<tr>
-<td><code>/api/guests/</code></td>
-<td>Управление гостями</td>
-<td>Guest</td>
-</tr>
-<tr>
-<td><code>/api/stays/</code></td>
-<td>Управление проживаниями</td>
-<td>Stay</td>
-</tr>
-<tr>
-<td><code>/api/employees/</code></td>
-<td>Управление сотрудниками</td>
-<td>Employee</td>
-</tr>
-<tr>
-<td><code>/api/cleaning/</code></td>
-<td>Управление расписанием уборки</td>
-<td>CleaningSchedule</td>
-</tr>
-</tbody>
-</table>
-<h2 id="_1">Стандартные операции</h2>
-<p>Все endpoints поддерживают следующие операции:</p>
-<h3 id="get-apiresource">GET <code>/api/{resource}/</code></h3>
-<p>Получить список всех объектов.</p>
-<p><strong>Ответ:</strong> 200 OK
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">[</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="p">{</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="err">...</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="p">}</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">]</span>
-</code></pre></div></p>
-<h3 id="get-apiresourceid">GET <code>/api/{resource}/{id}/</code></h3>
-<p>Получить конкретный объект по ID.</p>
-<p><strong>Ответ:</strong> 200 OK
+<h1 id="_1">Интерфейс управления графиком уборки</h1>
+<p>Интерфейс для управления графиком уборки помещений отеля.</p>
+<h2 id="_2">Описание</h2>
+<p>Компонент <code>CleaningSchedule.vue</code> предоставляет полный CRUD функционал для управления графиком уборки, включая создание, редактирование и удаление записей о назначении сотрудников на уборку этажей в определенные дни недели.</p>
+<h2 id="_3">Расположение</h2>
+<p>Компонент находится в файле <code>src/views/CleaningSchedule.vue</code></p>
+<h2 id="_4">Маршрут</h2>
+<ul>
+<li><strong>URL:</strong> <code>/cleaning</code></li>
+<li><strong>Маршрут:</strong> <code>CleaningSchedule</code></li>
+<li><strong>Мета:</strong> <code>requiresAuth: true</code> - доступен только авторизованным пользователям</li>
+</ul>
+<h2 id="_5">Функциональность</h2>
+<h3 id="_6">Основные операции</h3>
+<ol>
+<li><strong>Просмотр списка</strong> - отображение всего графика уборки в таблице</li>
+<li><strong>Создание</strong> - добавление новой записи в график</li>
+<li><strong>Редактирование</strong> - изменение существующей записи</li>
+<li><strong>Удаление</strong> - удаление записи из графика с подтверждением</li>
+</ol>
+<h3 id="_7">Поля формы</h3>
+<ol>
+<li><strong>День недели (weekday)</strong></li>
+<li>Тип: выбор из списка</li>
+<li>Обязательное поле</li>
+<li>Правила валидации: должен быть выбран день недели</li>
+<li>
+<p>Доступные значения: monday, tuesday, wednesday, thursday, friday, saturday, sunday</p>
+</li>
+<li>
+<p><strong>Сотрудник (employee_id)</strong></p>
+</li>
+<li>Тип: выбор из списка</li>
+<li>Обязательное поле</li>
+<li>Правила валидации: должен быть выбран сотрудник</li>
+<li>
+<p>В списке отображаются только работающие сотрудники (employed = true)</p>
+</li>
+<li>
+<p><strong>Этаж (floor_id)</strong></p>
+</li>
+<li>Тип: выбор из списка</li>
+<li>Обязательное поле</li>
+<li>Правила валидации: должен быть выбран этаж</li>
+</ol>
+<h3 id="_8">Валидация</h3>
+<p>Форма использует встроенную валидацию Vuetify с правилами:</p>
+<ul>
+<li><code>weekday</code>: проверка выбора дня недели</li>
+<li><code>employee_id</code>: проверка выбора сотрудника</li>
+<li><code>floor_id</code>: проверка выбора этажа</li>
+</ul>
+<p>На сервере также выполняется проверка:
+- Для каждого этажа может быть назначена только одна уборка в день недели
+- Нельзя назначить уволенного сотрудника</p>
+<h3 id="api-endpoints">API Endpoints</h3>
+<p><strong>GET</strong> <code>/api/cleaning/</code> - Получение списка записей графика уборки</p>
+<p><strong>GET</strong> <code>/api/cleaning/{id}/</code> - Получение конкретной записи</p>
+<p><strong>POST</strong> <code>/api/cleaning/</code> - Создание новой записи</p>
+<p><strong>PUT</strong> <code>/api/cleaning/{id}/</code> - Обновление записи</p>
+<p><strong>PATCH</strong> <code>/api/cleaning/{id}/</code> - Частичное обновление записи</p>
+<p><strong>DELETE</strong> <code>/api/cleaning/{id}/</code> - Удаление записи</p>
+<h3 id="_9">Пример запроса создания</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&quot;weekday&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;monday&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">&quot;employee_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">&quot;floor_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="_10">Пример ответа</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="err">...</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">}</span>
-</code></pre></div></p>
-<h3 id="post-apiresource">POST <code>/api/{resource}/</code></h3>
-<p>Создать новый объект.</p>
-<p><strong>Тело запроса:</strong> JSON объект с полями модели</p>
-<p><strong>Ответ:</strong> 201 Created
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="err">...</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="p">}</span>
-</code></pre></div></p>
-<h3 id="put-apiresourceid">PUT <code>/api/{resource}/{id}/</code></h3>
-<p>Полностью обновить объект (все поля обязательны).</p>
-<p><strong>Тело запроса:</strong> JSON объект со всеми полями модели</p>
-<p><strong>Ответ:</strong> 200 OK
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">{</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="err">...</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="p">}</span>
-</code></pre></div></p>
-<h3 id="patch-apiresourceid">PATCH <code>/api/{resource}/{id}/</code></h3>
-<p>Частично обновить объект (только указанные поля).</p>
-<p><strong>Тело запроса:</strong> JSON объект с полями для обновления</p>
-<p><strong>Ответ:</strong> 200 OK
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">{</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="err">...</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="p">}</span>
-</code></pre></div></p>
-<h3 id="delete-apiresourceid">DELETE <code>/api/{resource}/{id}/</code></h3>
-<p>Удалить объект.</p>
-<p><strong>Ответ:</strong> 204 No Content</p>
-<h2 id="_2">Коды ответов</h2>
-<table>
-<thead>
-<tr>
-<th>Код</th>
-<th>Описание</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>200</td>
-<td>Успешный запрос</td>
-</tr>
-<tr>
-<td>201</td>
-<td>Ресурс успешно создан</td>
-</tr>
-<tr>
-<td>204</td>
-<td>Ресурс успешно удален</td>
-</tr>
-<tr>
-<td>400</td>
-<td>Неверный запрос (ошибка валидации)</td>
-</tr>
-<tr>
-<td>401</td>
-<td>Требуется аутентификация</td>
-</tr>
-<tr>
-<td>403</td>
-<td>Доступ запрещен</td>
-</tr>
-<tr>
-<td>404</td>
-<td>Ресурс не найден</td>
-</tr>
-<tr>
-<td>500</td>
-<td>Внутренняя ошибка сервера</td>
-</tr>
-</tbody>
-</table>
-<h2 id="_3">Формат запросов и ответов</h2>
-<p>Все запросы и ответы используют формат JSON.</p>
-<p><strong>Заголовки запроса:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Content-Type: application/json
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>Authorization: Token {your_token}
-</code></pre></div></p>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="nt">&quot;weekday&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;monday&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="nt">&quot;employee&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="nt">&quot;last_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Петров&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="nt">&quot;first_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Петр&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="nt">&quot;middle_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Петрович&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="nt">&quot;employed&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">  </span><span class="nt">&quot;floor&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">    </span><span class="nt">&quot;number&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="p">}</span>
+</code></pre></div>
+<h2 id="ui">UI Компоненты</h2>
+<p>Интерфейс использует следующие компоненты Vuetify:</p>
+<ul>
+<li><code>v-container</code> - контейнер с адаптивной сеткой</li>
+<li><code>v-card</code> - карточка с данными</li>
+<li><code>v-data-table</code> - таблица для отображения данных</li>
+<li><code>v-dialog</code> - модальное окно для формы</li>
+<li><code>v-form</code> - форма с валидацией</li>
+<li><code>v-select</code> - выпадающие списки для выбора дня недели, сотрудника и этажа</li>
+<li><code>v-btn</code> - кнопки действий</li>
+<li><code>v-alert</code> - отображение ошибок</li>
+</ul>
+<h2 id="_11">Особенности</h2>
+<ul>
+<li>Дни недели отображаются на русском языке в таблице (Понедельник, Вторник и т.д.)</li>
+<li>В выпадающем списке сотрудников отображаются только работающие сотрудники</li>
+<li>Отображение полного имени сотрудника в формате "Фамилия Имя Отчество"</li>
+</ul>
+<h2 id="_12">Обработка ошибок</h2>
+<p>Компонент обрабатывает следующие типы ошибок:</p>
+<ul>
+<li><strong>400 Bad Request</strong>: Ошибки валидации данных (например, для этажа уже назначена уборка в этот день, попытка назначить уволенного сотрудника)</li>
+<li><strong>401 Unauthorized</strong>: Отсутствие авторизации</li>
+<li><strong>404 Not Found</strong>: Запись не найдена</li>
+<li><strong>500 Internal Server Error</strong>: Ошибка сервера</li>
+</ul>
+<p>Все ошибки отображаются в виде алерта под формой.</p>
 
 
 
