@@ -41,6 +41,15 @@ class FloorSerializer(serializers.ModelSerializer):
 
 
 class RoomSerializer(serializers.ModelSerializer):
+    type = RoomTypeSerializer(read_only=True)
+    type_id = serializers.PrimaryKeyRelatedField(
+        queryset=RoomType.objects.all(), source="type", write_only=True
+    )
+    floor = FloorSerializer(read_only=True)
+    floor_id = serializers.PrimaryKeyRelatedField(
+        queryset=Floor.objects.all(), source="floor", write_only=True
+    )
+
     def validate(self, attrs):
         number = attrs.get("number", getattr(self.instance, "number", None))
         floor = attrs.get("floor", getattr(self.instance, "floor", None))
@@ -57,7 +66,7 @@ class RoomSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Room
-        fields = '__all__'
+        fields = ['id', 'number', 'phone', 'type', 'type_id', 'floor', 'floor_id']
 
 
 class GuestSerializer(serializers.ModelSerializer):
@@ -67,6 +76,15 @@ class GuestSerializer(serializers.ModelSerializer):
 
 
 class StaySerializer(serializers.ModelSerializer):
+    guest = GuestSerializer(read_only=True)
+    guest_id = serializers.PrimaryKeyRelatedField(
+        queryset=Guest.objects.all(), source="guest", write_only=True
+    )
+    room = RoomSerializer(read_only=True)
+    room_id = serializers.PrimaryKeyRelatedField(
+        queryset=Room.objects.all(), source="room", write_only=True
+    )
+
     def validate(self, attrs):
         check_in = attrs.get("check_in", getattr(self.instance, "check_in", None))
         check_out = attrs.get("check_out", getattr(self.instance, "check_out", None))
@@ -91,7 +109,7 @@ class StaySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Stay
-        fields = '__all__'
+        fields = ['id', 'check_in', 'check_out', 'guest', 'guest_id', 'room', 'room_id']
 
 
 class EmployeeSerializer(serializers.ModelSerializer):
@@ -101,6 +119,14 @@ class EmployeeSerializer(serializers.ModelSerializer):
 
 
 class CleaningScheduleSerializer(serializers.ModelSerializer):
+    employee = EmployeeSerializer(read_only=True)
+    employee_id = serializers.PrimaryKeyRelatedField(
+        queryset=Employee.objects.all(), source="employee", write_only=True
+    )
+    floor = FloorSerializer(read_only=True)
+    floor_id = serializers.PrimaryKeyRelatedField(
+        queryset=Floor.objects.all(), source="floor", write_only=True
+    )
     VALID_WEEKDAYS = {"monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"}
 
     def validate_weekday(self, value):
@@ -125,4 +151,11 @@ class CleaningScheduleSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = CleaningSchedule
-        fields = '__all__'
+        fields = [
+            'id',
+            'weekday',
+            'employee',
+            'employee_id',
+            'floor',
+            'floor_id',
+        ]

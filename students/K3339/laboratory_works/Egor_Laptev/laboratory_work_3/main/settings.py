@@ -24,6 +24,12 @@ SECRET_KEY = 'django-insecure-urxm3wfyif%&_m)vjsgxbniai45ma!)4xeld9clf9&&-(g@l^r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+CORS_ORIGIN_ALLOW_ALL = True
+
+CORS_ORIGIN_WHITELIST = (
+    'http://localhost:8000',
+)
+
 ALLOWED_HOSTS = []
 
 # Application definition
@@ -39,7 +45,8 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'hotel',
     'djoser',
-    'drf_yasg'
+    'drf_yasg',
+    'corsheaders',
 ]
 
 REST_FRAMEWORK = {
@@ -49,6 +56,8 @@ REST_FRAMEWORK = {
 }
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.BrokenLinkEmailsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',

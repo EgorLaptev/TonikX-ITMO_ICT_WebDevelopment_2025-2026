@@ -181,3 +181,6 @@ curl -X DELETE http://localhost:8000/api/room-types/1/ \
 
 
 
+
+
+
